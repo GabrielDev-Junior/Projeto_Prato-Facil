@@ -1,9 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Playwrite+CU:wght@100..400&display=swap');
+html,
 body {
+  height: 100%;
+  margin: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
   background-image: url("../images/FundoPratoFeito.jpeg");
   background-size: cover;
   font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
   text-align: center;
 }
 
@@ -32,48 +39,80 @@ nav ul li a {
 }
 
 main {
+  background-color: rgba(245, 245, 245, 0.3);
   padding: 50px 20px;
+  flex: 1; /* Faz com que o conteúdo principal (<main>) ocupe o espaço restante disponível, empurrando o rodapé para o fundo. */
 }
 
 .intro h1 {
-  font-size: 48px;
-  color: #fff;
-  margin-bottom: 20px;
-  width: 350px;
-  border-radius: 15px;
+  font-family: 'Kaushan Script',cursive;
+  font-weight: 700;
+  letter-spacing: 3px;
+  font-size: 90px;
+  color: #ff7605;
+  width: 600px;
   margin: auto;
+  text-shadow: 3px 3px 3px  #16120e; /* Sombra branca suave */
 }
 
 .intro p {
-  font-size: 24px;
-  color: #333;
-  margin-bottom: 30px;
+  font-family: 'Kaushan Script', cursive;
+  font-size: 50px;
+  color: #ff7605;
+  width: 100%;
+  margin: auto;
+  text-shadow: 3px 3px 3px  #16120e; /* Sombra branca suave */
+  margin-bottom: 50px;
 }
-
 .btn {
-  background-color: #f27a1a;
-  color: white;
+  margin-top: 50px;
+  background-color: #fff;
+  color: #f27a1a;
   padding: 15px 30px;
   border-radius: 20px;
   text-decoration: none;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 20px;
+  box-shadow: 0px 0px 30px 1px #f27a1a; /* Sombra branca suave */;
 }
 
 .btn:hover {
+  font-size: 21px;
   background-color: #d56a14;
+  color: white;
 }
 
-footer {
+.footer {
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
   background-color: #333;
   color: white;
-  padding: 20px 0;
-  text-align: center;
 }
-
+.sub-footer,
+.footer-logo {
+  flex: 1; /* Permite que ambas as divs cresçam igualmente */
+}
+.sub-footer {
+  padding: 10px;
+  flex: 5; /* Permite que essa div seja 2,3 ou 4 vezes maior que a outra */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 15%;
+}
+.footer-logo {
+  margin-left: auto;
+  box-sizing: border-box;
+  margin-right: 2%;
+}
 .footer-content {
-  max-width: 1000px;
-  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  margin: auto;
 }
 
 .footer-links a {
@@ -98,11 +137,12 @@ footer {
 }
 
 .footer-logo img {
-  margin: 20px 0;
-  width: 150px;
+  width: 120px;
 }
 
 .footer-copyright {
   font-size: 12px;
   margin-top: 10px;
+  display: flex;
+  align-items: center;
 }
