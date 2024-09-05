@@ -1,106 +1,108 @@
 body {
- font-family: Arial, sans-serif;
- background-color: #fafafa;
- margin: 0;
- padding: 0;
- text-align: center;
+  background-image: url("../images/FundoPratoFeito.jpeg");
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
 header {
- padding: 10px 0;
- background-color: #fff;
+  padding: 10px 0;
+  background-color: #fff;
 }
 
 nav ul {
- list-style: none;
- padding: 0;
- margin: 0;
- display: flex;
- justify-content: center;
- gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
 nav ul li {
- display: inline;
+  display: inline;
 }
 
 nav ul li a {
- color: #f27a1a;
- text-decoration: none;
- font-weight: bold;
+  color: #f27a1a;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 main {
- padding: 50px 20px;
+  padding: 50px 20px;
 }
 
 .intro h1 {
- font-size: 48px;
- color: #f27a1a;
- margin-bottom: 20px;
+  font-size: 48px;
+  color: #fff;
+  margin-bottom: 20px;
+  width: 350px;
+  border-radius: 15px;
+  margin: auto;
 }
 
 .intro p {
- font-size: 24px;
- color: #333;
- margin-bottom: 30px;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 30px;
 }
 
 .btn {
- background-color: #f27a1a;
- color: white;
- padding: 15px 30px;
- border-radius: 20px;
- text-decoration: none;
- font-weight: bold;
- font-size: 18px;
+  background-color: #f27a1a;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
 }
 
 .btn:hover {
- background-color: #d56a14;
+  background-color: #d56a14;
 }
 
 footer {
- background-color: #333;
- color: white;
- padding: 20px 0;
- text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
 }
 
 .footer-content {
- max-width: 1000px;
- margin: 0 auto;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .footer-links a {
- color: #f27a1a;
- text-decoration: none;
- margin: 0 10px;
- font-size: 14px;
+  color: #f27a1a;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 14px;
 }
 
 .footer-links a:hover {
- text-decoration: underline;
+  text-decoration: underline;
 }
 
 .footer-social a {
- color: white;
- text-decoration: none;
- margin: 0 10px;
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
 }
 
 .footer-social a:hover {
- color: #f27a1a;
+  color: #f27a1a;
 }
 
 .footer-logo img {
- margin: 20px 0;
- width: 150px;
+  margin: 20px 0;
+  width: 150px;
 }
 
 .footer-copyright {
- font-size: 12px;
- margin-top: 10px;
+  font-size: 12px;
+  margin-top: 10px;
 }
-
-
