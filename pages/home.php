@@ -1,11 +1,11 @@
 <?php
-session_start();
+// session_start();
 include('../includes/config.php');
 
 // Função para verificar se o usuário está logado
-function isUserLoggedIn() {
-    return isset($_SESSION['user_id']);
-}
+// function isUserLoggedIn() {
+//     return isset($_SESSION['user_id']);
+// }
 
 $user_name = isset($_SESSION['user_name']) ? $_SESSION['user_name'] : 'Convidado';
 ?>

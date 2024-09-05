@@ -3,38 +3,38 @@ session_start();
 include('../includes/config.php'); // Arquivo com a configuração do banco de dados
 
 // Verifica se o usuário já está logado e redireciona para a home se estiver
-if (isset($_SESSION['user_id'])) {
-    header("Location: home.php");
-    exit();
-}
+// if (isset($_SESSION['user_id'])) {
+//     header("Location: home.php");
+//     exit();
+// }
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $email = $_POST['email'];
-    $password = $_POST['password'];
+// if ($_SERVER["REQUEST_METHOD"] == "POST") {
+//     $email = $_POST['email'];
+//     $password = $_POST['password'];
 
-    // Prepara e executa a consulta no banco de dados
-    $stmt = $conn->prepare("SELECT * FROM users WHERE email = ?");
-    $stmt->bind_param("s", $email);
-    $stmt->execute();
-    $result = $stmt->get_result();
+//     // Prepara e executa a consulta no banco de dados
+//     $stmt = $conn->prepare("SELECT * FROM users WHERE email = ?");
+//     $stmt->bind_param("s", $email);
+//     $stmt->execute();
+//     $result = $stmt->get_result();
 
-    if ($result->num_rows > 0) {
-        $user = $result->fetch_assoc();
-        // Verifica se a senha está correta
-        if (password_verify($password, $user['password'])) {
-            // Armazena os dados do usuário na sessão
-            $_SESSION['user_id'] = $user['id'];
-            $_SESSION['user_name'] = $user['name'];
-            // Redireciona para a página principal
-            header("Location: home.php");
-            exit();
-        } else {
-            $_SESSION['error'] = "Senha incorreta.";
-        }
-    } else {
-        $_SESSION['error'] = "Usuário não encontrado.";
-    }
-}
+//     if ($result->num_rows > 0) {
+//         $user = $result->fetch_assoc();
+//         // Verifica se a senha está correta
+//         if (password_verify($password, $user['password'])) {
+//             // Armazena os dados do usuário na sessão
+//             $_SESSION['user_id'] = $user['id'];
+//             $_SESSION['user_name'] = $user['name'];
+//             // Redireciona para a página principal
+//             header("Location: home.php");
+//             exit();
+//         } else {
+//             $_SESSION['error'] = "Senha incorreta.";
+//         }
+//     } else {
+//         $_SESSION['error'] = "Usuário não encontrado.";
+//     }
+// }
 ?>
 
 <!-- HTML começa aqui -->

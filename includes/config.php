@@ -1,8 +1,8 @@
 <!-- config.php -->
 <?php
 $hostname = "localhost"; // ou 127.0.0.1
-$username = "root"; // ou outro usuário configurado
-$password = ""; // senha do MySQL, geralmente vazia no WAMP
+$username = "cyber"; // ou outro usuário configurado
+$password = "my1234"; // senha do MySQL, geralmente vazia no WAMP
 $database = "projetopratofeito";
 
 // Conexão com o banco de dados
