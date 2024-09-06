@@ -1,13 +1,13 @@
-<?php
-session_start();
+<!-- <?php
+// session_start();
 
 // Destrói todas as variáveis de sessão
-session_unset();
+// session_unset();
 
 // Destrói a sessão
-session_destroy();
+// session_destroy();
 
 // Redireciona para a página home.php
-header("Location: home.php");
-exit();
-?>
+// header("Location: home.php");
+// exit();
+?> -->

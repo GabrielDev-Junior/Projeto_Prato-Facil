@@ -7,7 +7,7 @@ include('../includes/config.php');
 //     return isset($_SESSION['user_id']);
 // }
 
-$user_name = isset($_SESSION['user_name']) ? $_SESSION['user_name'] : 'Convidado';
+// $user_name = isset($_SESSION['user_name']) ? $_SESSION['user_name'] : 'Convidado';
 ?>
 
 <!DOCTYPE html>
@@ -21,7 +21,7 @@ $user_name = isset($_SESSION['user_name']) ? $_SESSION['user_name'] : 'Convidado
 <body>
     <header>
         <div class="logo">
-            <img src="../assets/images/logo.png" alt="Logo Prato Fácil">
+            <img src="assets/images/prato.png" alt="Logo Prato Fácil">
         </div>
         <nav>
             <ul>

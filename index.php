@@ -36,7 +36,7 @@
           <a href="privacy.php">Política de Privacidade</a>
           <a href="terms.php">Termos de Serviço</a>
           <a href="contact.php">Contato</a>
-          <a href="help.php">Ajuda</a>
+          <a href="pages/help.php">Ajuda</a>
         </div>
         <div class="footer-social">
           <a href="https://www.facebook.com" target="_blank">Facebook</a> |

@@ -1,5 +1,5 @@
 <?php
-session_start();
+// session_start();
 include('../includes/config.php'); // Arquivo com a configuração do banco de dados
 
 // Verifica se o usuário já está logado e redireciona para a home se estiver
